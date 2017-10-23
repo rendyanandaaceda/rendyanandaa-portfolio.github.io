@@ -1,0 +1,26 @@
+nav
+{
+  position: fixed;
+  width: 100%;
+  background-color: HoneyDew;
+  overflow: hidden;
+}
+
+nav a
+{
+  float: left;
+  padding: 15px 15px;
+  text-decoration: none;
+  color: DimGray;
+  transition: background-color 0.4s case;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.16em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+nav a.active, nav a:hover
+{
+  background-color: #C0FFF3;
+}

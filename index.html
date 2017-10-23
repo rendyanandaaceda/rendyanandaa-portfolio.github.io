@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title> Portfolio </title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,600|Roboto+Condensed" rel="stylesheet" type="text/css">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/menu.css">
+
+  <style>
+    /* Dasar */
+    *
+    {
+      box-sizing: border-box;
+    }
+    body
+    {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-size: 12px;
+
+      -webkit-user-select: none;
+      -moz-user-select: -moz-none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+
+    /* style kembar */
+    section.home, section.about, section.skills, section.portfolio, section.experience, section.contact
+    {
+      clear: left;
+      width: 100%;
+      min-height: 100%;
+    }
+    section.about article, section.skills article, section.portfolio article, section.experience article, section.contact article
+    {
+      padding: 10px 15px 15px 15px;
+    }
+    section.home, section.skills, section.contact
+    {
+      background: url('img/me/Paul_Haydel.jpg') no-repeat center fixed;
+      background-size: cover;
+      -moz-background-size: cover;  /* Firefox 3.6 */
+      background-position: center;  /* Internet Explorer 7/8 */
+    }
+    article h3
+    {
+      text-align: center;
+      font-size: 2.916em;
+      letter-spacing: .1rem;
+    }
+
+
+    /* home */
+    section.home
+    {
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      color: #fff;
+    }
+    section.home h1
+    {
+      font-size: 7.083em;
+      font-weight: normal;
+    }
+    section.home article
+    {
+      padding: 85px;
+    }
+
+
+    /* about */
+    section.about
+    {
+      background: url('img/me/abang.jpg');
+      background-size: cover;
+      -moz-background-size: cover;  /* Firefox 3.6 */
+      background-position: center;  /* Internet Explorer 7/8 */
+    }
+    section.about article.custom
+    {
+      padding-top: 130px;
+      width: 65%;
+    }
+    section.about article div.custom p
+    {
+      color: Black;
+      font-size: 1.5em;
+      font-family: sans-serif;
+      letter-spacing: .1rem;
+      text-align: center;
+    }
+
+
+    /* skills */
+    section.skills div.layout
+    {
+      border-radius: 12px;
+      padding-top: 90px;
+    }
+    section.skills div.layout-in
+    {
+      width:210px;
+      margin-left: 15px;
+      margin-right: 15px;
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      font-size: 2em;
+    }
+
+
+    /* portfolio */
+    section.portfolio
+    {
+      background-color: #fff;
+    }
+    .card
+    {
+       box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+       background-color: white;
+       display: inline-block;
+       margin-top: 50px;
+       margin-right: 30px;
+       margin-left: 30px;
+       margin-bottom: 30px;
+       padding: 15px 15px;
+    }
+    .card img
+    {
+      width: 500px;
+      height: auto;
+    }
+    .card a {
+       text-decoration: none;
+    }
+    .card-title
+    {
+       font-size: 1.2em;
+       text-align: center;
+       color: Black;
+    }
+
+    /* contact */
+    section.contact article.custom
+    {
+      padding-top: 100px;
+    }
+    section.contact article.custom h3
+    {
+      font-size: 1.5em;
+      text-align: left;
+    }
+    section.contact div.contact
+    {
+      background-color: #fff;
+      width: 30%;
+      border-radius: 5px 5px;
+      padding: 1px 20px 20px 20px;
+      font-size: 1.2em;
+      display: inline-block;
+    }
+
+    input[type=text] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 5px 0 23px 0;
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid #000;
+    }
+    input:focus{
+      outline: none;
+    }
+    textarea
+    {
+      width: 100%;
+      height: 150px;
+      padding: 12px 20px;
+      box-sizing: border-box;
+      border: 2px solid #000;
+      border-radius: 4px;
+      background-color: #fff;
+      resize: none;
+    }
+
+
+
+    @media only screen and (max-width: 720px) {
+      section.contact div.contact {
+        width: 100%;
+      }
+      .card img {
+        width: 200px;
+      }
+    }
+    h1, h2, h3, p
+    {
+      cursor: default;
+    }
+  </style>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/smoot-scroll.js"></script><!-- smoot-scroll -->
+  <script src="js/nav-marker.js"></script><!-- nav-marker -->
+  <script src="js/writer.js"></script><!-- writer animate -->
+  <!-- progress round -->
+  <script src="js/skill-html.js"></script>
+  <script src="js/skill-css.js"></script>
+  <script src="js/skill-js.js"></script>
+  <script src="js/skill-php.js"></script>
+  <script src="js/skill-sql.js"></script>
+  
+</head>
+<body>
+
+<header>
+
+</header>
+
+<nav>
+  <a href="#home" class="slide-section home-marker active">Home</a>
+  <a href="#about" class="slide-section about-marker">About</a>
+  <a href="#skills" class="slide-section skills-marker">Skills</a>
+  <a href="#portfolio" class="slide-section portfolio-marker">Portfolio</a>
+  <a href="#contact" class="slide-section contact-marker">Contact</a>
+</nav>
+
+<section class="home" id="home">
+  <article>
+    <h1>Welcome to my Portfolio...</h1>
+    <a class="typewrite" data-period="3000" data-type='["Hi There !", "my name is Rendy", "I am a Web Developer."]'></a>
+  </article>
+</section>
+
+<section class="about" id="about">
+  <article class="custom">
+    <h3>ABOUT ME</h3>
+
+    <div class="custom">
+      <p>Hello! I am Rendy.
+        Creating website apps, developing website apps is my passion.
+        Experienced on PHP programming language, HTML, CSS, JavaScript, MySQL Database
+        and Some Popular Frameworks Like Laravel, Bootstrap, jQuery and Angular Js. Hobbies Adventure, Games, Design and Programming.</p>
+    </div>
+
+  </article>
+</section>
+
+<section class="skills" id="skills">
+  <article>
+    <h3>SKILLS</h3>
+
+    <div class="layout" align="center">
+      <div class="layout-in" style="">
+          <canvas id="my-canvas" width="200" height="200" style="boder:1px; dashed #ccc;"></canvas>
+          <p>HTML</p>
+      </div>
+
+      <div class="layout-in" style="">
+          <canvas id="my-canvas2" width="200" height="200" style="boder:1px; dashed #ccc;"></canvas>
+          <p>CSS</p>
+      </div>
+
+      <div class="layout-in" style="">
+          <canvas id="my-canvas3" width="200" height="200" style="boder:1px; dashed #ccc;"></canvas>
+          <p>JavaScript</p>
+      </div>
+
+      <div class="layout-in" style="">
+          <canvas id="my-canvas4" width="200" height="200" style="boder:1px; dashed #ccc;"></canvas>
+          <p>PHP Language</p>
+      </div>
+
+      <div class="layout-in" style="">
+          <canvas id="my-canvas5" width="200" height="200" style="boder:1px; dashed #ccc;"></canvas>
+          <p>MySQL Database</p>
+      </div>
+
+    </div>
+  </article>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <article>
+    <h3>PORTFOLIO</h3>
+
+    <div class="" align="center">
+
+      <div class="card">
+        <a href="img/portfolio/mediatama.png" target="_blank">
+          <img src="img/portfolio/mediatama.png" alt="myportfolio" />
+
+        <div class="card-title">
+          <p>Sistem Informasi Penjualan, Pembelian dan Gudang Mediatama Computer</p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="img/portfolio/techa-butique.png" target="_blank">
+          <img src="img/portfolio/techa-butique.png" alt="myportfolio" />
+
+        <div class="card-title">
+          <p>Inventory Techa Butique</p>
+        </div>
+        </a>
+      </div>
+
+
+
+    </div>
+
+  </article>
+</section>
+
+<section class="contact" id="contact">
+  <article class="custom">
+
+    <div class="contact">
+      <h3><u>CONTACT ME</u></h3>
+      <form method="POST" action="">
+        <label for="">Name :</label>
+        <input type="text" name="name" placeholder="Write your name here.."  />
+
+        <label for="">Email :</label>
+        <input type="text" name="email" placeholder="Let me know how to contact you back.."  />
+
+        <label for="">Message :</label>
+        <textarea name="comment" placeholder="What would you like to tell me.." ></textarea>
+
+        <a href="index.html" type="button" name="submit" value=""><button>Send Message</button></a>
+      </form>
+    </div>
+
+  </article>
+</section>
+
+</body>
+</html>
